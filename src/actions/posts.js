@@ -9,7 +9,7 @@ export const getPosts = () => async (dispatch) => {
     const action = {type: FETCH_ALL_POSTS, payload: data};
     return dispatch(action);
   }catch(err){
-    console.log(err.message);
+    console.log(err);
   }
 }
 
@@ -20,7 +20,7 @@ export const createPost = (post) => async (dispatch) =>  {
     return dispatch(action);
 
   }catch(err){
-    console.log(err.message);
+    console.log(err);
   }
 }
 
@@ -31,7 +31,7 @@ export const updatePost = (id, post) => async (dispatch) => {
     return dispatch(action);
 
   }catch(err){
-    console.log(err.message);
+    console.log(err);
   }
 }
 
